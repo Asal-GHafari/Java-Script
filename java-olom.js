@@ -5,14 +5,14 @@ $(".le ").click(function(){
 	c=c+1;//alert(c);
 	$(".slider-previw2 > div > div ").each(function(){
 		if(c<24){
-			$(this).animate({'top':-300*c},500,'');
+			$(this).animate({'top':-300*c},1000,'easeOutExpo');
 		}
 	});	
 });
 	$(".ri ").click(function(){
 		if(c>23){c=0;
 			$(".slider-previw2 > div > div ").each(function(){
-				$(this).animate({'top':0},'slow',"");
+				$(this).animate({'top':0},'slow',"easeOutExpo");
 			});
 		}
 	});
